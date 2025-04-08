@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+  <!-- Fondo del logo -->
+  <rect x="0" y="0" width="500" height="200" fill="#2c3e50" rx="10" ry="10"/>
+  
+  <!-- Icono de coche -->
+  <g transform="translate(50, 50) scale(1.5)">
+    <path d="M30,50 L70,50 L80,40 L90,40 L100,30 L110,30 L120,40 L170,40 L180,50 L220,50 L210,60 L200,60 L190,70 L60,70 L50,60 L40,60 Z" fill="#3498db"/>
+    <circle cx="70" cy="80" r="15" fill="#2c3e50"/>
+    <circle cx="70" cy="80" r="8" fill="#ecf0f1"/>
+    <circle cx="180" cy="80" r="15" fill="#2c3e50"/>
+    <circle cx="180" cy="80" r="8" fill="#ecf0f1"/>
+    <rect x="90" y="40" width="20" height="10" fill="#e74c3c"/>
+  </g>
+  
+  <!-- Texto del logo -->
+  <text x="250" y="100" font-family="Arial" font-size="40" font-weight="bold" fill="#ecf0f1">RENT</text>
+  <text x="250" y="140" font-family="Arial" font-size="24" fill="#3498db">a car</text>
+  
+  <!-- Línea decorativa -->
+  <line x1="250" y1="150" x2="450" y2="150" stroke="#e74c3c" stroke-width="3"/>
+</svg>
