@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.8">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="1984" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-1" value="Vehiculo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="160" y="40" width="100" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-1">
+          <mxGeometry x="45" y="60" width="10" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-26" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-1">
+          <mxGeometry x="35" y="320" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value="Base de datos" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="440" y="40" width="100" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="45" y="70" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-1" value="&lt;div&gt;Administrador&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="40" width="20" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="E33vulogECA-Yhb9JF_4-1">
+          <mxGeometry x="5" y="50" width="10" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-2" value="Interfaz Escritorio&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="40" width="25" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="E33vulogECA-Yhb9JF_4-2">
+          <mxGeometry x="5" y="50" width="10" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-21" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="E33vulogECA-Yhb9JF_4-2">
+          <mxGeometry x="-5" y="390" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-5" value="CrearNuevoVehiculo()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" edge="1" parent="1" source="E33vulogECA-Yhb9JF_4-3" target="E33vulogECA-Yhb9JF_4-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="-250.00333333333347" y="90" as="sourcePoint" />
+            <mxPoint x="-50" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-6" value="Vehiculo()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="-35" y="99.99999999999994" as="sourcePoint" />
+            <mxPoint x="206" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-11" value="CheckMatricula()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="E33vulogECA-Yhb9JF_4-10" parent="1" source="E33vulogECA-Yhb9JF_4-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="115" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-12" value="errorMessage()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" edge="1" source="E33vulogECA-Yhb9JF_4-10" parent="1" target="E33vulogECA-Yhb9JF_4-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-13" value="If" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="160" width="950" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-14" value="[Matricula ya&amp;nbsp;&lt;div&gt;registrada]&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-385" y="203" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-16" value="&quot;Matricula ya registrada&quot;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" edge="1" parent="1" source="E33vulogECA-Yhb9JF_4-7" target="E33vulogECA-Yhb9JF_4-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="203" as="sourcePoint" />
+            <mxPoint x="70" y="203" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-17" value="&quot;Matricula ya registrada,&lt;div&gt;comprobar los datos&quot;&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0048" y="14" relative="1" as="geometry">
+            <mxPoint x="-46" y="206" as="sourcePoint" />
+            <mxPoint x="-255" y="206" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="270" width="950" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-20" value="[else]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-385" y="278" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-22" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="205" y="280" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-23" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="485" y="290" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-24" value="Matricula no registrada" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="E33vulogECA-Yhb9JF_4-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="308" as="sourcePoint" />
+            <mxPoint x="220" y="310" as="targetPoint" />
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-25" value="registrarVehiculo()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="E33vulogECA-Yhb9JF_4-23">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="215" y="329.58" as="sourcePoint" />
+            <mxPoint x="295" y="329.58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-27" value="codigo de exito" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="E33vulogECA-Yhb9JF_4-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="360" as="sourcePoint" />
+            <mxPoint x="125" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E33vulogECA-Yhb9JF_4-30" value="&quot;Matricula registrada con exito&quot;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-45.00000000000023" y="388.9999999999999" as="sourcePoint" />
+            <mxPoint x="-255" y="388.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
