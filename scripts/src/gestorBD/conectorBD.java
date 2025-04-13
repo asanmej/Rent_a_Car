@@ -66,9 +66,9 @@ public class conectorBD {
 	}
 
 	/**
-	 * Update tabla de Vehículos
+	 * Realiza modificaciones de datos en la Base de Datos.
 	 * 
-	 * @param sentencia String con la información a añadir en la tabla de vehículos
+	 * @param sentencia String con la información a módificar (añadir, actualizar, eliminar) en cada tabla.
 	 * @return true cuando se ha realizado con exito.
 	 */
 	public boolean updateDB(String sentencia) {
@@ -84,6 +84,12 @@ public class conectorBD {
 		return false;
 	}
 
+	/**
+	 * Realiza consultas a la Base de Datos según la sentencia suministrada.
+	 * 
+	 * @param sentencia String con la información que se quiere consultar
+	 * @return ResultSet tabla con la información que coincide con la consulta
+	 */
 	public ResultSet queryDB(String sentencia) {
 
 		Statement st = null;
@@ -97,5 +103,7 @@ public class conectorBD {
 		}
 		return result;
 	}
+	
+//	TODO incluir excepciones especificas de SQL para manejarlas mejor
 
 }

@@ -2,7 +2,6 @@ package vehiculo;
 
 import java.util.ArrayList;
 
-
 public abstract class Vehiculo {
 	private String idVehiculo = null;
 	private String nombre, marca, matricula;
@@ -126,7 +125,10 @@ public abstract class Vehiculo {
 	}
 
 	/**
-	 * Elimina un vehículo de la tabla de vehículos
+	 * Elimina un vehículo de la tabla de vehículos según el idVehiculo.
+	 * 
+	 * @param idVehiculo int correspondiente al vehículo.
+	 *                   TODO lanzar error si vehiculo no encontrado
 	 */
 	public String eliminarVehiculo(int idVehiculo) {
 
@@ -134,13 +136,30 @@ public abstract class Vehiculo {
 
 	}
 
+	/**
+	 * Elimina un vehículo de la tabla de vehículos según la matrícula seleccionada.
+	 * 
+	 * @param matricula String con la matrícula a eliminar.
+	 * @return
+	 */
+
+	// TODO lanzar error si vehiculo no encontrado
 	public String eliminarVehiculo(String matricula) {
 
 		return "DELETE FROM vehiculo WHERE matricula = '" + matricula + "'";
 	}
 
-	public String modificarVehiculo(String parametro, String nuevoValor, String idVehiculo) {
-		
+	/**
+	 * Módifica el parametro del vehículo suministrado
+	 * 
+	 * @param parametro
+	 * @param nuevoValor
+	 * @param idVehiculo
+	 * @return
+	 */
+	@SuppressWarnings("unlikely-arg-type")
+	public String modificarVehiculoPorId(String parametro, String nuevoValor, String idVehiculo) {
+
 		String result = "";
 		parametro = parametro.toLowerCase();
 		ArrayList<String> listaNumeros = new ArrayList<String>();
@@ -148,13 +167,32 @@ public abstract class Vehiculo {
 		listaNumeros.add("km");
 		listaNumeros.add("precioDia");
 
-		if(listaNumeros.contains(listaNumeros)) {
-			result = result + "UPDATE vehiculo SET " + parametro + " = " + nuevoValor + " WHERE idVehiculo = " + idVehiculo;
-			
-		}else {
-			result = result + "UPDATE vehiculo SET " + parametro + " = '" + nuevoValor + "' WHERE idVehiculo = " + idVehiculo ;	
+		if (listaNumeros.contains(listaNumeros)) {
+			result = result + "UPDATE vehiculo SET " + parametro + " = " + nuevoValor + " WHERE idVehiculo = "
+					+ idVehiculo;
+
+		} else {
+			result = result + "UPDATE vehiculo SET " + parametro + " = '" + nuevoValor + "' WHERE idVehiculo = "
+					+ idVehiculo;
 		}
 		return result;
-		
+
 	}
+	
+	static public String modificarPreciDia(String tipo, String categoria, int nuevoPrecioDia) throws Exception {
+		
+		String result = "";
+		
+		if(nuevoPrecioDia >= 0) {
+			
+			result = result + "UPDATE vehiculo SET precioDia = " + nuevoPrecioDia + " WHERE tipoVehiculo = '" + tipo + "' AND categoriaVehiculo = '" + categoria + "'";
+			
+		}else {
+			throw new Exception("El nuevo precio por día no puede ser menor a 0 €");
+		}
+		
+		
+		return result;
+	}
+	
 }
