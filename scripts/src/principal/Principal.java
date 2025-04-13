@@ -9,11 +9,11 @@ public class Principal {
 
 		Furgoneta furgoneta = new Furgoneta("aaaa", "aaaa", "aaaa", "11-04-2025","11-04-2025", 10, 10, "estandar");
 //		Furgoneta furgoneta = new Furgoneta(null, null, null, null, null, 0, 0, null);
-		System.out.print(furgoneta.modificarVehiculo("marca", "aaaa", "14"));
+		System.out.print(furgoneta.modificarVehiculoPorId("marca", "aaaa", "14"));
 
 
 		
-		conectorBD conexion = new conectorBD("c##rentacar", "rentacar", "jdbc:oracle:thin:@localhost:1521:xe");
+		conectorBD conexion = new conectorBD();
 //		String sentencia = "INSERT INTO vehiculo VALUES (NULL, '6', 'BMW', 100000, 'KAK00', '02022018','05062019', 5.4, 'motocicleta', NULL)";
 //		String sentencia = "SELECT * FROM vehiculo";
 //		ResultSet resultado;
@@ -21,8 +21,8 @@ public class Principal {
 		System.out.println(conexion.abrirConexion());
 
 //		System.out.println(conexion.updateDB(furgoneta.crearVehiculoDB()));
-//		System.out.println(conexion.updateDB(furgoneta.eliminarVehiculo("aaaa")));
-		System.out.println(conexion.updateDB("UPDATE vehiculo SET marca = 'aaaa' WHERE idVehiculo = 14"));
+		System.out.println(conexion.updateDB(furgoneta.eliminarVehiculo(2)));
+//		System.out.println(conexion.updateDB(furgoneta.modificarVehiculoPorId("marca", "bbbb", "14")));
 
 //		resultado = queryVehiculo(sentencia);
 

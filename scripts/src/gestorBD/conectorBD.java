@@ -15,13 +15,13 @@ import java.util.Properties;
 
 public class conectorBD {
 
-	private String user; // Usuario que realiza la conexión
-	private String password; // Contraseña del usuario
-	private String urlOracle; // Servidor donde se encuentra la base de datos
-	private Connection conexion;
+	private String user = "c##rentacar"; // Usuario que realiza la conexión
+	private String password = "rentacar"; // Contraseña del usuario
+	private String urlOracle = "jdbc:oracle:thin:@localhost:1521:xe"; // Servidor donde se encuentra la base de datos
+	private Connection conexion = null;
 
 	/**
-     * Constructor de Gestor de BD
+     * Constructor explicito de conector de BD en caso de que se tuviera otro usuario con las bases de datos montadas
      * @param db
      * @param login
      * @param password
@@ -32,6 +32,13 @@ public class conectorBD {
         this.password = password;
         this.urlOracle = urlOracle;
         this.conexion = null;
+    }
+    
+    /**
+     * Constructor vacio de conector de BD, implica utilizar los parametros de la clase por defecto
+     */
+    public conectorBD() {
+    	
     }
 
 	/**

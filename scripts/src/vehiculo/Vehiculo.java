@@ -102,7 +102,7 @@ public abstract class Vehiculo {
 	 * 
 	 * @return String con la sentencia SQL para crear un registro en la base de datos de vehiculo
 	 */
-	protected String crearVehiculoBD() {
+	public String crearVehiculoBD() {
 
 		String sentencia = "INSERT INTO vehiculo VALUES (" + this.idVehiculo + ",'" + this.nombre + "','" + this.marca
 				+ "'," + this.kilometers + ",'" + this.matricula + "','" + this.fechaMantenimiento + "','"
@@ -117,7 +117,7 @@ public abstract class Vehiculo {
 	 * @return String sentencia para modificar la fecha de Mantenimiento de un vehículo concreto en la
 	 *         BD
 	 */
-	public String insertarFechaMantenimiento(String nuevaFecha, String idVehiculo) {
+	static public String insertarFechaMantenimiento(String nuevaFecha, String idVehiculo) {
 
 		String result = "UPDATE vehiculo SET fechaMantenimineto = " + nuevaFecha + " WHERE idVehiculo = " + idVehiculo;
 
@@ -130,7 +130,7 @@ public abstract class Vehiculo {
 	 * @param idVehiculo int correspondiente al vehículo.
 	 *                   TODO lanzar error si vehiculo no encontrado
 	 */
-	public String eliminarVehiculo(int idVehiculo) {
+	static public String eliminarVehiculo(int idVehiculo) {
 
 		return "DELETE FROM vehiculo WHERE idVehiculo = " + idVehiculo;
 
@@ -142,9 +142,7 @@ public abstract class Vehiculo {
 	 * @param matricula String con la matrícula a eliminar.
 	 * @return
 	 */
-
-	// TODO lanzar error si vehiculo no encontrado
-	public String eliminarVehiculo(String matricula) {
+	static public String eliminarVehiculo(String matricula) {
 
 		return "DELETE FROM vehiculo WHERE matricula = '" + matricula + "'";
 	}
@@ -152,13 +150,13 @@ public abstract class Vehiculo {
 	/**
 	 * Módifica el parametro del vehículo suministrado
 	 * 
-	 * @param parametro
-	 * @param nuevoValor
-	 * @param idVehiculo
+	 * @param parametro String de la columna a modificar
+	 * @param nuevoValor String con el nuevo valor
+	 * @param idVehiculo String con el id del vehículo
 	 * @return
 	 */
 	@SuppressWarnings("unlikely-arg-type")
-	public String modificarVehiculoPorId(String parametro, String nuevoValor, String idVehiculo) {
+	static public String modificarVehiculoPorId(String parametro, String nuevoValor, String idVehiculo) {
 
 		String result = "";
 		parametro = parametro.toLowerCase();
